@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>null和undefind</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+<script>
+    //undefind
+    // var $num_undefind
+    // console.log($num_undefind)
+    // var $num = null
+    // console.log(typeof($num))
+    //typeof不能判断null这个数据类型   
+    //1 加引号的都是字符串
+    //  字符串 String
+    //2 字符串一旦创建就无法更改
+    //3.字符串可以用.length来获取长度（空格和特殊字符都算在长度）
+    //4.字符串有下标/索引 字符串[写从零开始的数字-字符串的长度-1]
+    // var $num = "hello word!!!";
+    // document.write($num[0])
+    // document.write($num[1]) 
+    // document.write($num[2]) 
+    // document.write($num[3]) 
+    // document.write($num[4]) 
+    // document.write($num[5]) 
+    // document.write($num[6]) 
+    // document.write($num[7]) 
+    // document.write($num[8]) 
+    // document.write($num[9]) 
+    // document.write($num[10]) 
+
+    // console.log($num)
+    // //索引/下标 0开始，0就是第一个
+    // var len = $num.length;
+
+    // console.log(len)
+    // console.log($num[len-1])
+    //字符串  string
+    // var $str = 12432445;
+    // var zhuan = String($str)
+    // console.log(typeof($str))
+    // 1.string(str)把别的类型转换成字符串
+    // 2. str.tostring()
+    // //驼峰命名规则：小驼峰nameType和大驼峰NameType
+    // var $str2 = 4456576767;
+    // var zhuan1 = $str2.toString(16)
+    // console.log(zhuan1)
+
+
+    //属于字符串的方法1：String()
+    // var num = 35864876547546//Number类型
+    //方法的作用：把别的类型转成字符串
+    //var zhuanwan = String(num)//string类型
+    // console.log(typeof(zhuanwan))
+    // 字符串的方法2
+    //toString()(把别的类型转化成字符串)
+    // 跟string的不同之处：
+    //1.不能转换null和undefind
+    //2.可以转换进制(可以把10进制转换成别的进制)
+    // var newzhuan = num.toString(2)
+    // console.log(newzhuan)//209e7139fdda
+    // //把转成字符串16进制的转回数字
+    // // console.log(newnum)//NaN
+    // console.log(typeof(newzhuan))
+    // console.log('这款手机的回复\n上的讲话的疯狂进攻和反对')
+
+
+
+
+
+
+
+
+    //5种基本（简单）数据类型：
+    // number,string,null,undefined,boolean
+    //null 
+    //undefined 
+    var na
+    console.log(na) //undefined
+        //boolean：值是true false布尔型
+        // Boolean()方法把别的类型转换成布尔型
+        // 转换规则：
+        //1.Number转换成布尔：非零数字为true,其他为false
+        //2.string转换成布尔：非空字符串全部是true
+        //3.undefined转成false
+        //4.null转成false
+    var str = null
+    var zhuanBoolean = Boolean(str)
+    console.log(zhuanBoolean)
+        //Number类型：整型(整数)，浮点型(小数)，NaN(not a number)
+        //方法：
+        // （1）.parseInt()转成整数
+        // (a.别的类型转成数字;b.把小数用去尾法转成整数)
+        // （2）parseFloat()把乱七八糟转成小数
+        // 如：23.23.23转成23.23
+        //  (3)Number()把别的类型转成数字
+        //转换规则：
+        // 1.boolean转数字：true转1，false转0;
+        //2.null转0
+        //3.undefined转NaN
+        //4.字符串：a.加引号数字转成正常数字
+        //b.汉字字母数字按相应编码转换
+        //c.16进制转成10进制
+        // String字符串
+        //特点：加引号的就是字符串
+        //属性：1.length可以获取字符长度
+        // 2.索引/下标 []
+    var $str = 'hello word!'
+    console.log($str.length)
+    console.log($str[0])
+        // 方法：
+        // 1.String() 把别的类型转成字符串
+    var bool = true;
+    var zhuan = String(bool) //布尔转字符串
+    console.log(typeof(zhuan)) //判断转换完的类型   
+        //2.tostring() 把别的类型转成字符串
+        //tostring跟string相比不同：
+        //1.tostring不能转换null和undefined
+        //2.可以把十进制转换成别的进制
+    var $num2 = 475754654986749648
+    var zhuanto = $num2.toString(16)
+</script>
