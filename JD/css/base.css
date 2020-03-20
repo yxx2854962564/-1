@@ -1,0 +1,38 @@
+*,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+i {
+    font-style: normal;
+}
+
+b {
+    font-weight: normal;
+}
+
+ul,
+li,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+    /* 数字越大越黑  #333最黑 #666偏灰  #999更灰*/
+}
+
+.clear:after {
+    content: "";
+    display: block;
+    visibility: hidden;
+    height: 0;
+    line-height: 0;
+    clear: both;
+}
+
+.cb {
+    clear: both;
+}
